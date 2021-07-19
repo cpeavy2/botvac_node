@@ -59,7 +59,7 @@ ros2 run nav2_map_server map_saver_cli -f ~/<ws>/src/navigation2/nav2_bringup/br
 Note: Save to directory on your workstation. That is use your own ROS2 workspace.
  
 
-## After creating the map and saving it kill the slam toolbox terminal and launch the below launch flle to load in the map you saved.
+## After creating the map and saving it kill the slam toolbox terminal and launch the below launch file to load in the map you saved.
 
 ## To load in map and navigate: 
 
