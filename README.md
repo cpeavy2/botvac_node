@@ -59,13 +59,17 @@ ros2 run nav2_map_server map_saver_cli -f ~/<ws>/src/navigation2/nav2_bringup/br
 Note: Save to directory on your workstation. That is use your own ROS2 workspace.
  
 
-## After creating the map and saving it kill the slam toolbox terminal and launch the below launch file to load in the map you saved.
-
-## To load in map and navigate: 
+## After creating the map and saving it kill the slam toolbox and rviz2 terminal. Launch the below launch file to load in the map you saved.
 
 ``` 
 ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=True map:=/home/user/ws/src/navigation2/nav2_bringup/bringup/maps/map.yaml
 ```
 Again, load from user and workspace directory on your workstation.
 
-## Set the robot's pose. Select a target goal on the map and the robot will autonomously navigate there.
+## Relaunch rviz2
+
+```
+ros2 launch nav2_bringup rviz_launch.py
+```
+
+## On rviz2 Set the robot's pose (2D Pose Estimate). Select a target goal (Navigation2 Goal) on the map and the robot will autonomously navigate there.
