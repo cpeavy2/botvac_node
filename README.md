@@ -13,6 +13,7 @@ sudo apt install ros-foxy-xacro
 sudo apt install python3-rosdep2
 ```
 Be sure and create a workspace for your ROS2 source builds.
+...
 Check these repos out into your workspace as follows:
 ```
 cd <ws>/src
