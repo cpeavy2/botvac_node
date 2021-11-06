@@ -12,9 +12,9 @@ sudo apt install build-essential
 sudo apt install ros-foxy-xacro
 sudo apt install python3-rosdep2
 ```
-Be sure and create a workspace for your ROS2 source builds.
+Be sure and create a workspace <ws> and source <src> directory for your ROS2 source builds.
 ...
-Check these repos out into your workspace as follows:
+Check these repos into that workspace <ws> / source <src> directory as follows:
 ```
 cd <ws>/src
 git clone https://github.com/cpeavy2/botvac_node.git
@@ -27,10 +27,10 @@ cd ..
 rosdep update
 rosdep install --from-paths src --ignore-src -r -y
  
-cd ..
+cd ..    # Home directory
 echo 'source ~/<ws>/install/setup.bash' >> ~/.bashrc   # sources setup.bash for future sessions. Use your own ROS workspace.
 source ~/<ws>/install/setup.bash                       # sources setup.bash for current session
-
+ 
 Install colcon: ROS 2 repository!
 https://colcon.readthedocs.io/en/released/user/installation.html
 
