@@ -31,7 +31,7 @@ cd ..
 echo 'source ~/<ws>/install/setup.bash' >> ~/.bashrc   # sources setup.bash for future sessions. Use your own ROS workspace.
 source ~/<ws>/install/setup.bash                       # sources setup.bash for current session
 
-Install colcon:
+Install colcon: ROS 2 repository!
 https://colcon.readthedocs.io/en/released/user/installation.html
 
 cd ~/<ws>
