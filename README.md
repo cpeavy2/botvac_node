@@ -27,6 +27,7 @@ cd ..
 rosdep update
 rosdep install --from-paths src --ignore-src -r -y
  
+cd ..
 echo 'source ~/<ws>/install/setup.bash' >> ~/.bashrc   # sources setup.bash for future sessions. Use your own ROS workspace.
 source ~/<ws>/install/setup.bash                       # sources setup.bash for current session
  
