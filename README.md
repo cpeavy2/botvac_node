@@ -1,6 +1,6 @@
 ## (Neato) Botvac launch files
  
-This repository contains ROS2 Foxy launch files for the Neato Botvac robots.
+This repository contains ROS2 Foxy launch files for the Neato Botvac robots. Not compatible with D8, D9 and D10.
  
 ## Assumes Ubuntu 20.04 and ROS2 Foxy have been successfully installed
  
