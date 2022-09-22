@@ -25,7 +25,8 @@ git clone https://github.com/kobuki-base/velocity_smoother.git
 ## Install on Ubuntu PC workstation in /src (not necessary to have Nav2 on Pi)
 ```
 cd <ws>/src
-git clone -b humble-devel https://github.com/ros-planning/navigation2.git
+git clone -b humble https://github.com/ros-planning/navigation2.git
+
 ```
 ## On both Workstation and Pi
 ```
