@@ -22,7 +22,7 @@ git clone https://github.com/cpeavy2/neato_robot.git
 git clone https://github.com/kobuki-base/cmd_vel_mux.git
 git clone https://github.com/kobuki-base/velocity_smoother.git
 ``` 
-## Install on Ubuntu PC workstation (not necessary to have Nav2 on Pi)
+## Install on Ubuntu PC workstation in /src (not necessary to have Nav2 on Pi)
 ```
 cd <ws>/src
 git clone -b humble-devel https://github.com/ros-planning/navigation2.git
