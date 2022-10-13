@@ -4,7 +4,7 @@ This repository contains ROS2 humble launch files for the Neato Botvac robot and
  
 ## Assumes Ubuntu 22.04 and ROS2 Humble have been successfully installed on both Workstation and Pi
  
-## Install on Raspberry Pi4
+## Install on Raspberry Pi4 and Ubuntu PC Workstation.
  
 Prerequisites:
 ```
@@ -24,7 +24,7 @@ git clone https://github.com/kobuki-base/velocity_smoother.git
 git clone https://github.com/stonier/ecl_tools
 
 ``` 
-## Install on Ubuntu PC workstation (not necessary to have Nav2 on Pi)
+## Install on Ubuntu PC workstation (not necessary to have on Pi).
 ```
 sudo apt install ros-humble-navigation2
 sudo apt install ros-humble-nav2-bringup
@@ -54,11 +54,11 @@ source ~/<ws>/install/setup.bash                       # sources setup.bash for 
 ``` 
 ros2 launch botvac_node botvac_base.launch.py          # This launches the Neato Node which calls the Neato Driver.
 ``` 
-## Launch Slam Toolbox on PC Workstation
+## Launch Slam Toolbox on PC Workstation.
 ```
 ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=True map:=/home/user/ws/src/navigation2/nav2_bringup/bringup/maps/map.yaml slam:=True
 ```  
-## Run RViz2 on PC
+## Run RViz2 on PC Workstation.
 ```
 ros2 launch nav2_bringup rviz_launch.py 
 ```
@@ -66,12 +66,12 @@ ros2 launch nav2_bringup rviz_launch.py
 ``` 
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ``` 
-## To create map drive robot around using the teleop keyboard node
+## To create map drive robot around using the teleop keyboard node.
  
 ## After finishing the map use this command to save map on PC
 
 ```
-ros2 run nav2_map_server map_saver_cli -f ~/<ws>/src/navigation2/nav2_bringup/bringup/maps/map --free 0.196 --ros-args -p save_map_timeout:=5000
+ros2 run nav2_map_server map_saver_cli -f ~/<ws>/src/navigation2/nav2_bringup/bringup/maps/map --free 0.196 --ros-args -p save_map_timeout:=5000.0
 ```
 Note: Save to directory on your workstation. That is use your own ROS2 workspace.
  
@@ -89,4 +89,4 @@ Again, load from user and workspace directory on your workstation.
 ros2 launch nav2_bringup rviz_launch.py
 ```
 
-## On rviz2 set the robot's pose (2D Pose Estimate). Select a target goal (Navigation2 Goal) on the map and the robot will autonomously navigate there.
+## On rviz2 set the robot's pose (2D Pose Estimate). Select a target goal (Navigation2 Goal) on the map and the robot will autonomously navigate to that goal.
