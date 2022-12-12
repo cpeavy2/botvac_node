@@ -9,7 +9,8 @@ from ament_index_python.packages import get_package_share_directory
 import yaml
 
 
-pkg_name = 'velocity_smoother'
+pkg_name = 'kobuki_velocity_smoother',
+exe_name = 'velocity_smoother'
 config_file = 'velocity_smoother_params.yaml'
 
 def generate_launch_description():
@@ -37,7 +38,7 @@ def generate_launch_description():
             default_value = 'odom'
         ),
        launch_ros.actions.Node(
-            package = pkg_name,
+            executable = exe_name,
             executable = pkg_name,
             name = pkg_name,
             output = "both",
