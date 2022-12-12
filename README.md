@@ -20,7 +20,7 @@ cd <ws>/src
 git clone https://github.com/cpeavy2/botvac_node.git
 git clone https://github.com/cpeavy2/neato_robot.git
 git clone https://github.com/kobuki-base/cmd_vel_mux.git
-git clone https://github.com/kobuki-base/velocity_smoother.git
+git clone https://github.com/kobuki-base/kobuki_velocity_smoother
 git clone https://github.com/stonier/ecl_tools
 
 ``` 
