@@ -32,7 +32,7 @@ sudo apt install ros-humble-nav2-bringup
 ```
 ## On both Workstation and Pi
 ```
-cd ..
+cd ~/<ws>
 rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 ``` 
