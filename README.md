@@ -11,6 +11,7 @@ Prerequisites:
 sudo apt install build-essential
 sudo apt install ros-humble-xacro
 sudo apt install python3-rosdep2
+sudo apt install ros-humble-ament-cmake-python
 ```
 Be sure and create a workspace <ws> and source <src> directory for your ROS2 source builds.
 ...
