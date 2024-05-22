@@ -35,7 +35,7 @@ sudo apt install ros-humble-nav2-bringup
 ```
 cd ~/<ws>
 rosdep update
-rosdep install --from-paths src --ignore-src -r -y
+rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
 ``` 
 Install colcon: ROS 2 repository!
 https://colcon.readthedocs.io/en/released/user/installation.html
